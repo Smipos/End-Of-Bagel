@@ -82,4 +82,6 @@ http://bagel.htb:8000/?page=index.html [200 OK] Bootstrap, Country[RESERVED][ZZ]
 ```
 ![image](https://user-images.githubusercontent.com/77785989/235317771-c87b67b4-1f99-4bb4-b708-c5534bfc45fa.png)
 
-Как видим - порт 5000 выдает ошибку, а порт 8000 перенаправляет нас на страницу http://bagel.htb:8000/?page=index.html
+Порт 5000 выдает ошибку, а порт 8000 перенаправляет нас на страницу http://bagel.htb:8000/?page=index.html
+
+Как мы можем видеть: в адресной строке имеется * page?=.html *
