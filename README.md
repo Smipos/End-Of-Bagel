@@ -244,3 +244,5 @@ using System.Runtime.Versioning;
 [assembly: AssemblyTitle("bagel")]
 ```
 ![image](https://user-images.githubusercontent.com/77785989/235320379-fa864623-5cfe-4ebd-8c53-7ae7748f1b59.png)
+
+6) Предположим, что в коде dotnet есть уязвимость десереализации JSON.
