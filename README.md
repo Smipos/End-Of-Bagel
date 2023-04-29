@@ -139,3 +139,13 @@ _laurel:x:987:987::/var/log/laurel:/bin/false
 ```
 ![image](https://user-images.githubusercontent.com/77785989/235318743-c59b5d57-6c70-4e95-a81d-d3fa67a42157.png)
 
+Двигаемся дальше и ищем файл proc/self/cmdline с целью просмотра процессов.
+Находим его и тоже просматриваем.
+```
+(kali㉿kali)-[~/Downloads]
+└─$ cat cmdline
+python3/home/developer/app/app.py                                                                                                                               
+
+```
+![image](https://user-images.githubusercontent.com/77785989/235318890-8d5c03ac-bf28-453a-8e19-40aa3d26668e.png)
+
