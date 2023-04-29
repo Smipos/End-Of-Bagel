@@ -149,3 +149,5 @@ python3/home/developer/app/app.py
 ```
 ![image](https://user-images.githubusercontent.com/77785989/235318890-8d5c03ac-bf28-453a-8e19-40aa3d26668e.png)
 
+Мы увидели путь к питоновскому файлу. Попытаемся выгрузить и его.
+![image](https://user-images.githubusercontent.com/77785989/235319025-1a10fae4-73e0-45c4-a64e-27e8fe16531a.png)
