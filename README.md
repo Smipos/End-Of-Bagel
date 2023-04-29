@@ -83,6 +83,7 @@ http://bagel.htb:8000/?page=index.html [200 OK] Bootstrap, Country[RESERVED][ZZ]
 ![image](https://user-images.githubusercontent.com/77785989/235317771-c87b67b4-1f99-4bb4-b708-c5534bfc45fa.png)
 
 Порт 5000 выдает ошибку, а порт 8000 перенаправляет нас на страницу http://bagel.htb:8000/?page=index.html
+![image](https://user-images.githubusercontent.com/77785989/235318585-bcc0d798-f028-4800-8b60-6b6262e1bc59.png)
 
 Как мы можем видеть: в адресной строке имеется * page?=.html *
 Значит мы можем попробовать что-нибудь вытянуть с помощью LFI.
