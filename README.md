@@ -52,3 +52,6 @@ PORT     STATE SERVICE  VERSION
 | http-title: Bagel &mdash; Free Website Template, Free HTML5 Template by fr...
 ```
 ![image](https://user-images.githubusercontent.com/77785989/235317015-6dc072ee-1538-4f68-a1a8-379ff423c5cf.png)
+
+Как мы видим - открыто 3 порта: 22, 5000, 8000.
+
