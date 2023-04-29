@@ -208,8 +208,8 @@ dotnet/opt/bagel/bin/Debug/net6.0/bagel.dll  PID => 925
 dotnet/opt/bagel/bin/Debug/net6.0/bagel.dll  PID => 926
 /usr/lib/polkit-1/polkitd--no-debug  PID => 927
 ```
-Находим его 
+Я нашел путь к файлу, который запускается с помощью dotnet
 ```
 dotnet/opt/bagel/bin/Debug/net6.0/bagel.dll  PID => 924
 ```
-и пытаемся выгрузить
+и пытаюсь выгрузить его
