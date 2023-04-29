@@ -217,3 +217,30 @@ dotnet/opt/bagel/bin/Debug/net6.0/bagel.dll  PID => 924
 Путь к файлу: http://bagel.htb:8000/?page=../../../../../../../dotnet/opt/bagel/bin/Debug/net6.0/bagel.dll
 
 5) Скачиваем dnSpy и просматриваем файл bagel.dll
+
+```
+// C:\Users\smipo\Desktop\bagel.dll
+// bagel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+
+// Точка входа: bagel_server.Bagel.Main
+// Время: <Неизвестно> (F753A2F1)
+
+using System;
+using System.Diagnostics;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.Versioning;
+
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: CompilationRelaxations(8)]
+[assembly: RuntimeCompatibility(WrapNonExceptionThrows = true)]
+[assembly: Debuggable(DebuggableAttribute.DebuggingModes.Default | DebuggableAttribute.DebuggingModes.DisableOptimizations | DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints | DebuggableAttribute.DebuggingModes.EnableEditAndContinue)]
+[assembly: TargetFramework(".NETCoreApp,Version=v6.0", FrameworkDisplayName = "")]
+[assembly: AssemblyCompany("bagel")]
+[assembly: AssemblyConfiguration("Debug")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyInformationalVersion("1.0.0")]
+[assembly: AssemblyProduct("bagel")]
+[assembly: AssemblyTitle("bagel")]
+```
+![image](https://user-images.githubusercontent.com/77785989/235320379-fa864623-5cfe-4ebd-8c53-7ae7748f1b59.png)
