@@ -68,3 +68,6 @@ ff02::2 ip6-allrouters
 10.10.11.201 bagel.htb
 ```
 ![image](https://user-images.githubusercontent.com/77785989/235317321-13dfaf59-6944-4994-b9aa-bf91698d519e.png)
+
+3) Запускаем BurpSuite и смотрим сайт.
+ 
