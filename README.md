@@ -246,6 +246,9 @@ using System.Runtime.Versioning;
 ![image](https://user-images.githubusercontent.com/77785989/235320379-fa864623-5cfe-4ebd-8c53-7ae7748f1b59.png)
 
 Находим логин и пароль разработчика:
+```
+string text = "Data Source=ip;Initial Catalog=Orders;User ID=dev;Password=k8wdAYYKyhnjg3K";
+```
 ![image](https://user-images.githubusercontent.com/77785989/235324822-f3e515c8-bcdc-4a47-8140-27130208812d.png)
 
 6) Предположим, что в коде dotnet есть уязвимость десереализации JSON.
