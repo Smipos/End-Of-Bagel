@@ -216,4 +216,4 @@ dotnet/opt/bagel/bin/Debug/net6.0/bagel.dll  PID => 924
 Все получается.
 Путь к файлу: http://bagel.htb:8000/?page=../../../../../../../dotnet/opt/bagel/bin/Debug/net6.0/bagel.dll
 
-5) Используем dnSpy для декомпиляции файла bagel.dll
+5) Скачиваем dnSpy и просматриваем файл bagel.dll
