@@ -6,7 +6,7 @@
 sudo openvpn /home/kali/Downloads/lab_smipos.ovpn
 ```
 
-Проверяем открытые порты с помощью программы Zenmap. 
+1) Проверяем открытые порты с помощью программы Zenmap. 
 ```
 nmap -T4 -A -v 10.10.11.201
 ```
@@ -55,3 +55,16 @@ PORT     STATE SERVICE  VERSION
 
 Как мы видим - открыто 3 порта: 22, 5000, 8000.
 
+2) Помещаем 10.10.11.201 bagel.htb в папку с хостами.
+```
+cat /etc/hosts
+127.0.0.1       localhost
+127.0.1.1       kali
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+10.10.11.201 bagel.htb
+```
+![image](https://user-images.githubusercontent.com/77785989/235317321-13dfaf59-6944-4994-b9aa-bf91698d519e.png)
