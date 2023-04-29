@@ -69,5 +69,14 @@ ff02::2 ip6-allrouters
 ```
 ![image](https://user-images.githubusercontent.com/77785989/235317321-13dfaf59-6944-4994-b9aa-bf91698d519e.png)
 
-3) Запускаем BurpSuite и смотрим сайт.
+3) Смотрим информацию о сайте с помощью команды whatweb.
+```
+whatweb 10.10.11.201:5000
+http://10.10.11.201:5000 [400 Bad Request] Country[RESERVED][ZZ], HTTPServer[Microsoft-NetCore/2.0], IP[10.10.11.201]
+```
  
+```
+whatweb 10.10.11.201:8000
+http://10.10.11.201:8000 [302 Found] Country[RESERVED][ZZ], HTML5, HTTPServer[Werkzeug/2.2.2 Python/3.10.9], IP[10.10.11.201], Python[3.10.9], RedirectLocation[http://bagel.htb:8000/?page=index.html], Title[Redirecting...], Werkzeug[2.2.2]
+http://bagel.htb:8000/?page=index.html [200 OK] Bootstrap, Country[RESERVED][ZZ], HTML5, HTTPServer[Werkzeug/2.2.2 Python/3.10.9], IP[10.10.11.201], JQuery, Meta-Author[freehtml5.co], Modernizr[2.6.2.min], Open-Graph-Protocol, Python[3.10.9], Script, Title[Bagel &mdash; Free Website Template, Free HTML5 Template by freehtml5.co], Werkzeug[2.2.2], X-UA-Compatible[IE=edge]
+```
