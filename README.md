@@ -187,3 +187,5 @@ def order(): # don't forget to run the order app first with "dotnet <path to .dl
     except:
         return("Unable to connect")
  ```
+Просматривая файл, мы увидели интересную строчку: не забудьте сначала запустить приложение order с помощью команды "dotnet <путь к .". Используйте свой ssh-ключ для доступа к компьютеру."
+![image](https://user-images.githubusercontent.com/77785989/235319129-cd219465-f809-4461-9c2d-45b013b8ae22.png)
