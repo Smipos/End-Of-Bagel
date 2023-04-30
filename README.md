@@ -291,3 +291,4 @@ Warning: Permanently added '10.10.11.201' (ED25519) to the list of known hosts.
 Last login: Sat Apr 29 20:13:46 2023 from 10.10.14.95
 [phil@bagel ~]$                                                                                                                                
 ```
+![image](https://user-images.githubusercontent.com/77785989/235347664-16b3f937-3177-4989-b0c6-b51a5ffd9d1f.png)
