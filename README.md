@@ -294,3 +294,31 @@ Last login: Sat Apr 29 20:13:46 2023 from 10.10.14.95
 ![image](https://user-images.githubusercontent.com/77785989/235347664-16b3f937-3177-4989-b0c6-b51a5ffd9d1f.png)
 
 Перезаходим под пользователем разработчик:
+```
+[phil@bagel ~]$ su developer
+Password: 
+[developer@bagel phil]$ 
+```
+![image](https://user-images.githubusercontent.com/77785989/235347732-804ca6da-da28-415b-8fdf-ba82ac50f27d.png)
+
+Поскольку мы знаем пароль пользователя developer, мы смотрим, есть ли у него какие-либо специальные разрешения, и, похоже, он может запускать dotnet как если бы он был root.
+
+```
+[developer@bagel phil]$ id
+uid=1000(developer) gid=1000(developer) groups=1000(developer) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+[developer@bagel phil]$ 
+
+```
+
+```
+[developer@bagel phil]$ sudo -l
+Matching Defaults entries for developer on bagel:
+    !visiblepw, always_set_home, match_group_by_gid, always_query_group_plugin, env_reset, env_keep="COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS", env_keep+="MAIL QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE", env_keep+="LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES", env_keep+="LC_MONETARY LC_NAME
+    LC_NUMERIC LC_PAPER LC_TELEPHONE", env_keep+="LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY", secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/var/lib/snapd/snap/bin
+
+User developer may run the following commands on bagel:
+    (root) NOPASSWD: /usr/bin/dotnet
+[developer@bagel phil]$ 
+
+```
+Видим, что папка без пароля и своими шалавливыми ручками лезем туда
